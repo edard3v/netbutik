@@ -2,8 +2,8 @@ import Contact from "./Contact";
 
 export const CONTACT = {
   id: crypto.randomUUID(),
-  path: "contact",
-  to: "/contact",
+  path: "contacto",
+  to: "/contacto",
   display: "Contacto",
   element: <Contact />,
 };

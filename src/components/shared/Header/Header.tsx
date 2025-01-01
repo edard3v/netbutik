@@ -1,14 +1,16 @@
 import css from "./Header.module.css";
 import Link from "@components/links/Link/Link";
-import { CONTACT } from "@pages/Contact/config";
-import { HOME } from "@pages/Home/config";
+import { NAVIGATION_PAGES } from "@router/router";
 
 export default function Header() {
   return (
     <header className={css.header}>
       <nav>
-        <Link to={HOME.to}>{HOME.display}</Link>
-        <Link to={CONTACT.to}>{CONTACT.display}</Link>
+        {NAVIGATION_PAGES.map((page) => (
+          <Link key={page.id} to={page.to}>
+            {page.display}
+          </Link>
+        ))}
       </nav>
     </header>
   );
