@@ -1,3 +1,8 @@
+body {
+  background-color: var(--bg-main);
+  color: var(--paras);
+}
+
 .layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
