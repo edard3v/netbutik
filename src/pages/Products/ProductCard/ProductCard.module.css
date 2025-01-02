@@ -1,0 +1,16 @@
+.card {
+  display: grid;
+  gap: var(--md);
+  max-width: 400px;
+  background-color: var(--bg-surf);
+  padding: var(--lg);
+  border-radius: var(--sm);
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 350px;
+    aspect-ratio: 500 / 500;
+    object-fit: cover;
+  }
+}

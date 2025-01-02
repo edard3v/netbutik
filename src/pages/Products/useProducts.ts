@@ -1,8 +1,8 @@
 import { API } from "@api/api";
 import { useQuery } from "@tanstack/react-query";
 
-export const useGetProducts = () => {
-  const filters = { limit: 6 };
+export const useProducts = () => {
+  const filters = { limit: 20 };
   const { data, isLoading, isError } = useQuery({
     queryKey: ["products", filters],
     queryFn: (tanStack) =>

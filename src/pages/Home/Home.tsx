@@ -7,6 +7,7 @@ export default function Home() {
     <Layout title={HOME.display}>
       <main className={css.home}>
         <h1>¡Hola mundo!</h1>
+        <img src="react.svg" alt="algo" />
       </main>
     </Layout>
   );
