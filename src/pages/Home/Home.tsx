@@ -1,6 +1,6 @@
 import css from "./Home.module.css";
 import Layout from "@layouts/Layout/Layout";
-import { HOME } from "./config";
+import { HOME } from "./path";
 
 export default function Home() {
   return (

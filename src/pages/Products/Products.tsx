@@ -1,5 +1,5 @@
 import Layout from "@layouts/Layout/Layout";
-import { PRODUCTS } from "./config";
+import { PRODUCTS } from "./path";
 import { useGetProducts } from "./useGetProducts";
 import Loading from "@components/loaders/Loading/Loading";
 import Err from "@components/errs/Err/Err";
