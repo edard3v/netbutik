@@ -53,8 +53,7 @@ p {
 }
 
 a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  text-decoration: none;
   cursor: pointer;
   color: inherit;
   display: inline-block;
