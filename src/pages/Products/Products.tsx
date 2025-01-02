@@ -3,6 +3,7 @@ import { PRODUCTS } from "./path";
 import { useGetProducts } from "./useGetProducts";
 import Loading from "@components/loaders/Loading/Loading";
 import Err from "@components/errs/Err/Err";
+import ProductCard from "./ProductCard/ProductCard";
 
 export default function Products() {
   const { isLoading, products, isError } = useGetProducts();
@@ -14,7 +15,7 @@ export default function Products() {
         {isError && !isLoading && <Err />}
 
         {products?.records.map((record) => (
-          <div key={record.id}>{record.name}</div>
+          <ProductCard product={record} />
         ))}
       </main>
     </Layout>

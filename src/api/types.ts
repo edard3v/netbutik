@@ -2,10 +2,10 @@ export interface GetProducts {
   limit: number;
   page: number;
   totalPages: number;
-  records: Products[];
+  records: Product[];
 }
 
-export interface Products {
+export interface Product {
   id: string;
   name: string;
   stock: number;
