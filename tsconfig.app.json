@@ -32,7 +32,8 @@
       "@services/*": ["src/services/*"],
       "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],
-      "@errors/*": ["src/errors/*"]
+      "@errors/*": ["src/errors/*"],
+      "@api/*": ["src/api/*"]
     }
   },
   "include": ["src"]

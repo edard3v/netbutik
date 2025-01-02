@@ -13,7 +13,8 @@ export default defineConfig({
       "@services": "/src/services",
       "@utils": "/src/utils",
       "@styles": "/src/styles",
-      "@errors": "/src/erros",
+      "@errors": "/src/errors",
+      "@api": "/src/api",
     },
   },
 });

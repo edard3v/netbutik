@@ -5,7 +5,7 @@ export class EdarErr extends Error {
     super();
     this.name = "EdarErr";
     this.status = status;
-    this.msg = msg || "Algo va mal. 🥲";
+    this.msg = msg || "Algo salió mal 🥲.";
   }
 }
 
