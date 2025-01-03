@@ -1,6 +1,6 @@
 import Layout from "@layouts/Layout/Layout";
 import { CART } from "./path";
-import { useCartStore } from "./useCartStore";
+import { useCartStore } from "./store/useCartStore";
 
 export default function Cart() {
   const products = useCartStore((store) => store.products);
