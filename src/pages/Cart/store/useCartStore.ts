@@ -12,6 +12,10 @@ export const useCartStore = create<CartStore>()(
       toggle(newProduct) {
         toggle(newProduct, set, get);
       },
+      isInCart(productId) {
+        const { products } = get();
+        return !!products.find((product) => product.id === productId);
+      },
     }),
     { name: "cart" }
   )
@@ -19,6 +23,7 @@ export const useCartStore = create<CartStore>()(
 
 export type CartStore = {
   products: Product[] | [];
+  isInCart: (productId: string) => boolean;
   toggle: (newProduct: Product) => void;
 };
 

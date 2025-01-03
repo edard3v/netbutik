@@ -13,4 +13,22 @@
     aspect-ratio: 500 / 500;
     object-fit: cover;
   }
+
+  .name {
+    position: relative;
+    .cart {
+      cursor: pointer;
+      background-color: transparent;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
 }

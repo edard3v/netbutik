@@ -7,7 +7,7 @@ export const toggle = (
   get: GetCartStore
 ) => {
   const { products, ...rest } = get();
-  let finalProducts = products;
+  let finalProducts = [...products];
 
   const productIndex = products.findIndex(
     (product) => product.id === newProduct.id
