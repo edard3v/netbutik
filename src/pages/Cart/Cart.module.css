@@ -1,0 +1,20 @@
+.cart {
+  .wrapper1 {
+    display: grid;
+    gap: var(--lg);
+    justify-content: center;
+
+    .cards {
+      display: grid;
+      gap: var(--lg);
+      place-content: start;
+    }
+
+    .total {
+      border: var(--border);
+      padding: var(--md);
+      border-radius: var(--md);
+      justify-self: end;
+    }
+  }
+}

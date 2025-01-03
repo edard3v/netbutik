@@ -1,0 +1,23 @@
+.card {
+  padding: var(--lg);
+  border-radius: var(--sm);
+  background-color: var(--bg-surf);
+  max-width: 700px;
+
+  display: grid;
+  gap: var(--lg);
+  grid-template-columns: 90px 1fr 80px auto;
+  align-items: center;
+
+  img {
+    width: 90px;
+    height: 90px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .pin {
+    background-color: transparent;
+    padding: 0;
+  }
+}
